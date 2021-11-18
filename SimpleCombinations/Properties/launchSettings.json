@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SimpleCombinations": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Projects\\SimpleCombinations\\input.txt C:\\Projects\\SimpleCombinations\\output.txt"
+    }
+  }
+}
