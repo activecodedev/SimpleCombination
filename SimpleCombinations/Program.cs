@@ -9,8 +9,9 @@ namespace SimpleCombinations
     {
         static void Main(string[] args)
         {
+            int iterator = 0;
             List<string> inputList = File.ReadLines(args[0]).ToList();
-            List<string> outputList = new List<string>();
+            List<string> outputList = new();
 
             foreach (var outside in GetKCombs(inputList, 2))
             {
@@ -24,8 +25,10 @@ namespace SimpleCombinations
                     sentence += " - ";
                 }
                 outputList.Add(sentence);
+                iterator++;
             }
 
+            outputList.Add($"Count: {iterator}");
             File.WriteAllLines(args[1], outputList);
         }
 
